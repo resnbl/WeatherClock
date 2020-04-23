@@ -1,0 +1,33 @@
+#ifndef _CONFIG_H_
+#define _CONFIG_H_
+
+#include <Arduino.h>
+
+// WiFi info:
+#define WIFI_SSID "ssid"
+#define WIFI_PSWD "password"
+#define WIFI_HOST "WeatherClock"
+#define WIFI_CONN_DELAY_MS 1000
+#define WIFI_MAX_CONN_COUNT 10
+
+// NTP server info:
+#define NTP_POOL PSTR("XX.pool.ntp.org")    // prefix with country code
+#define NTP_TZ TZ_Etc_Universal             // see values in <TZ.h>
+#define NTP_SYNC_DELAY_MS 100
+#define NTP_MAX_SYNC_COUNT 100
+
+// OpenWeatherMap API info:
+#define OWM_API "your_API_code_here"
+#define OWM_ID "123456"                     // city ID
+#define OWM_UNITS "imperial"                // or "metric"
+#define WEATHER_CHECK_MS (15 * 60 * 1000)   // check every 15 mins
+
+// Max7219 panel info:
+#define PANEL_CLK D5        // hardware pins
+#define PANEL_CS D6
+#define PANEL_DIN D7
+#define PANEL_WIDTH 4		    // # of 8x8 displays wide
+#define PANEL_HEIGHT 1		  // # of 8x8 displays tall
+#define PANEL_BRIGHTNESS 8	// 0 (dim) - 15 (bright)
+
+#endif
