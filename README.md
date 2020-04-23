@@ -46,6 +46,6 @@ into the `libs\` sub-directory in your project.
 
 ## Clock case
 
-The case that I 3D-printed can be seen at https://thingiverse.com/123456.
+The case that I 3D-printed can be seen at https://www.thingiverse.com/make:794146.
 Please follow back the "remixed from" links to see the original
 creator's version.
